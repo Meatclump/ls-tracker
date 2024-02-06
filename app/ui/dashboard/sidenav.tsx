@@ -1,5 +1,7 @@
 import Link from "next/link";
 import NavLinks from "./nav-links";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPowerOff, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 export default function SideNav() {
     return (
@@ -15,8 +17,8 @@ export default function SideNav() {
             <div className="flex flex-col justify-between grow gap-2">
                 <NavLinks />
                 <div className="hidden md:block grow h-auto w-full"></div>
-                <button className="rounded-md bg-zinc-800 w-full p-3 text-sm flex hover:bg-amber-500 hover:text-amber-950 font-medium">
-                    Log Out
+                <button className="flex items-center gap-2 rounded-md bg-zinc-800 w-full p-3 text-sm hover:bg-amber-500 hover:text-amber-950 font-medium">
+                    <FontAwesomeIcon icon={faPowerOff} /> Log Out
                 </button>
             </div>
         </div>

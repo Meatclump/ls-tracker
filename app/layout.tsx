@@ -5,7 +5,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Yep Linkshell Tracker",
+  title: {
+    template: "%s | Yep Linkshell Tracker",
+    default: "Yep Linkshell Tracker"
+  },
   description: "Linkshell Tracker for Yep by Meatclump.",
   icons: {
     icon: `/favicon.png`

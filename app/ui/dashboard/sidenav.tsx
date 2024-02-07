@@ -3,7 +3,7 @@ import NavLinks from "./nav-links";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPowerOff, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
-const yepArray = ["ye", "yerp", "yea", "mhmm", "yer", "ya", "yas", "yeppers", "yes"]
+const yepArray = ["ye", "yerp", "yea", "mhmm", "yer", "ya", "yas", "yeppers", "yes", "nope"]
 
 export default function SideNav() {
 	return (
@@ -12,12 +12,12 @@ export default function SideNav() {
 				className="rounded-md px-3 py-2 text-2xl text-gray-100 hover:text-neutral-50 bg-red-500 hover:bg-red-700 h-20 items-end flex mb-2 gap-2"
 				href={"/"}
 			>
-				<img src="/linkpearl.png" className="w-9 brightness-200" />
-				<h2>
+				<img src="/linkpearl.png" className="w-8 brightness-200" />
+				<h4 className="text-md">
 					{
 						yepArray[Math.floor(Math.random() * yepArray.length)]
 					} ls
-				</h2>
+				</h4>
 			</Link>
 			<div className="flex flex-col justify-between grow gap-2">
 				<NavLinks />

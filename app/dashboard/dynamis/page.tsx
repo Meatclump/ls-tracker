@@ -1,7 +1,7 @@
 export default function Dynamis() {
-    return (
-        <>
-            Page
-        </>
-    )
+	return (
+		<>
+			Page
+		</>
+	)
 }

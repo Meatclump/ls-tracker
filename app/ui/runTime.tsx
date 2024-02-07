@@ -7,7 +7,6 @@ export default function RunTime({ runs }: { runs: Date[] }) {
 	const [selectedRun, setSelectedRun] = useState("")
 
 	function handleDeleteRun() {
-		console.log("Selected Run:", selectedRun)
 		setRunsArray(prevRuns => [
 			...prevRuns.filter(run =>
 				run.valueOf().toString() !== selectedRun

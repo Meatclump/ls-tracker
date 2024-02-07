@@ -6,10 +6,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Yep Linkshell Tracker",
-    default: "Yep Linkshell Tracker"
+    template: "%s | yep Linkshell Tracker",
+    default: "yep Linkshell Tracker"
   },
-  description: "Linkshell Tracker for Yep by Meatclump.",
+  description: "Linkshell Tracker for yep by Meatclump.",
   icons: {
     icon: `/favicon.png`
   }

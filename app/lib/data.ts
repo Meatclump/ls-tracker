@@ -13,3 +13,12 @@ export async function getAttendants() {
 		]
 	}
 }
+
+export async function getRuns() {
+	return {
+		runs: [
+			new Date("December 17, 1995 03:24:00"),
+			new Date("December 21, 1995 01:42:30"),
+		]
+	}
+}
